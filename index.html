@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Іван Шпинда — Full-stack розробник</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <div class="layout">
+                <aside class="sidebar">
+                    <div class="intro">
+                        <h1 class="name">Іван Шпинда</h1>
+                        <h2 class="title">Full-stack розробник</h2>
+                        <p class="tagline">
+                            Створюю продукти від прототипу до продакшену.
+                        </p>
+                    </div>
+
+                    <nav class="nav" id="nav">
+                        <a href="#about" class="nav-link" data-section="about">
+                            <span class="dot"></span>Про мене
+                        </a>
+                        <a
+                            href="#projects"
+                            class="nav-link"
+                            data-section="projects"
+                        >
+                            <span class="dot"></span>Проєкти
+                        </a>
+                        <a
+                            href="#experience"
+                            class="nav-link"
+                            data-section="experience"
+                        >
+                            <span class="dot"></span>Досвід
+                        </a>
+                        <a
+                            href="#contact"
+                            class="nav-link"
+                            data-section="contact"
+                        >
+                            <span class="dot"></span>Контакти
+                        </a>
+                    </nav>
+
+                    <button
+                        type="button"
+                        id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Змінити тему"
+                    >
+                        <svg
+                            class="icon-sun"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        >
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path
+                                d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+                            ></path>
+                        </svg>
+                        <svg
+                            class="icon-moon"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M20.7 14.9A9 9 0 1 1 9.1 3.3a7 7 0 0 0 11.6 11.6Z"
+                            ></path>
+                        </svg>
+                    </button>
+
+                    <div class="social">
+                        <a
+                            href="https://github.com/ivan-shpynda"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="GitHub"
+                        >
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.7 5.42-5.27 5.7.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.21.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/ivan-shpynda-3576021a1"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="LinkedIn"
+                        >
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://t.me/ian_shp"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Telegram"
+                        >
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M23.5 2.5 20 21.6c-.26 1.15-.95 1.43-1.92.9l-5.3-3.9-2.56 2.46c-.28.28-.52.52-1.07.52l.38-5.4L19.5 6.3c.44-.4-.1-.62-.7-.22L6.24 13.9.9 12.24c-1.16-.36-1.18-1.16.25-1.72L22.02.86c.97-.36 1.82.23 1.48 1.64Z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                </aside>
+
+                <main class="main">
+                    <section id="about" class="section">
+                        <h3 class="section-heading">Про мене</h3>
+                        <p>
+                            Full-stack розробник з 5-річним досвідом роботи з
+                            сучасними веб-технологіями: React, Vue.js,
+                            TypeScript, Tailwind CSS, Node.js та інше. Ефективно
+                            використовую AI інструменти для швидкого
+                            прототипування та розробки.
+                        </p>
+                        <p>
+                            Окрім розробки маю досвід лідерства. Понад два роки
+                            очолював команду з 4 розробників та 2
+                            тестувальників. Займався плануванням спринтів,
+                            розстановку пріоритетів і підвищення ефективності
+                            процесів.
+                        </p>
+                        <p>
+                            Серед іншого займався розробкою внутрішніх
+                            NPM-пакетів та Node.js тулзів, що допомогло
+                            скоротити час розробки на близько 35%.
+                        </p>
+                        <div class="tag-list">
+                            <span>React</span><span>Vue.js</span
+                            ><span>TypeScript</span><span>Node.js</span
+                            ><span>Claude Code</span>
+                        </div>
+                    </section>
+
+                    <section id="projects" class="section">
+                        <div class="section-header">
+                            <h3 class="section-heading">Проєкти</h3>
+                            <span class="section-subheading">Open source</span>
+                        </div>
+
+                        <div class="project-list">
+                            <article class="project-card">
+                                <div class="project-body">
+                                    <div class="project-content">
+                                        <div class="project-kicker">Сайт</div>
+                                        <h4 class="project-title">
+                                            Музей Митрополита Андрея
+                                        </h4>
+                                        <p class="project-desc">
+                                            Сайт для музею Митрополита Андрея
+                                            Шептицького у Львові. Запуск у
+                                            продакшн планується у серпні 2026
+                                            року.
+                                        </p>
+                                        <div class="tech-list">
+                                            <span>Next.js</span
+                                            ><span>Firebase</span
+                                            ><span>CSS Modules</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a
+                                                href="https://museum-sandy-nine.vercel.app/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="link-accent"
+                                                >Demo ↗</a
+                                            >
+                                            <a
+                                                href="https://github.com/ivan-shpynda/museum"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="link-muted"
+                                                >GitHub ↗</a
+                                            >
+                                        </div>
+                                        <span class="note-badge"
+                                            >Готується до запуску</span
+                                        >
+                                    </div>
+                                    <a
+                                        class="project-thumb"
+                                        href="https://museum-sandy-nine.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <div class="browser-window">
+                                            <div class="browser-bar">
+                                                <div class="browser-dots">
+                                                    <span class="dot-red"></span
+                                                    ><span
+                                                        class="dot-yellow"
+                                                    ></span
+                                                    ><span
+                                                        class="dot-green"
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div class="browser-url">
+                                                <span class="url-icon"></span>
+                                                <span class="url-text"
+                                                    >museum-sandy-nine.vercel.app</span
+                                                >
+                                            </div>
+                                            <div class="browser-content">
+                                                <img
+                                                    src="imgs/museum.png"
+                                                    alt="Скрін сайту музею Митрополита Андрея"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-body">
+                                    <div class="project-content">
+                                        <div class="project-kicker">Сайт</div>
+                                        <h4 class="project-title">
+                                            NYT і розпад СРСР
+                                        </h4>
+                                        <p class="project-desc">
+                                            Візуалізація для дослідження про
+                                            висвітлення розпаду Радянського
+                                            Союзу виданням The New York Times.
+                                        </p>
+                                        <div class="tech-list">
+                                            <span>React</span><span>SQLite</span
+                                            ><span>Chart.js</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a
+                                                href="https://nyt-topics.vercel.app/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="link-accent"
+                                                >Demo ↗</a
+                                            >
+                                            <a
+                                                href="https://github.com/ivan-shpynda/nyt-topics"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="link-muted"
+                                                >GitHub ↗</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <a
+                                        class="project-thumb"
+                                        href="https://nyt-topics.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <div class="browser-window">
+                                            <div class="browser-bar">
+                                                <div class="browser-dots">
+                                                    <span class="dot-red"></span
+                                                    ><span
+                                                        class="dot-yellow"
+                                                    ></span
+                                                    ><span
+                                                        class="dot-green"
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div class="browser-url">
+                                                <span class="url-icon"></span>
+                                                <span class="url-text"
+                                                    >nyt-topics.vercel.app</span
+                                                >
+                                            </div>
+                                            <div class="browser-content">
+                                                <img
+                                                    src="imgs/nyt-topics.png"
+                                                    alt="Скрін візуалізації NYT і розпад СРСР"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-body">
+                                    <div class="project-content">
+                                        <div class="project-kicker">
+                                            Веб-гра
+                                        </div>
+                                        <h4 class="project-title">
+                                            Вгадай рік
+                                        </h4>
+                                        <p class="project-desc">
+                                            Гра-вікторина про важливі події в
+                                            історії України.
+                                        </p>
+                                        <div class="tech-list">
+                                            <span>Vue.js</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a
+                                                href="https://guess-the-year-omega.vercel.app/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="link-accent"
+                                                >Demo ↗</a
+                                            >
+                                            <a
+                                                href="https://github.com/ivan-shpynda/guess-the-year"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="link-muted"
+                                                >GitHub ↗</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <a
+                                        class="project-thumb"
+                                        href="https://guess-the-year-omega.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <div class="browser-window">
+                                            <div class="browser-bar">
+                                                <div class="browser-dots">
+                                                    <span class="dot-red"></span
+                                                    ><span
+                                                        class="dot-yellow"
+                                                    ></span
+                                                    ><span
+                                                        class="dot-green"
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div class="browser-url">
+                                                <span class="url-icon"></span>
+                                                <span class="url-text"
+                                                    >guess-the-year-omega.vercel.app</span
+                                                >
+                                            </div>
+                                            <div class="browser-content">
+                                                <img
+                                                    src="imgs/guess-year.png"
+                                                    alt="Скрін гри Вгадай рік"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section id="experience" class="section experience-section">
+                        <h3 class="section-heading">
+                            Досвід роботи та навички
+                        </h3>
+
+                        <div class="skills-block">
+                            <h4 class="subheading">Навички</h4>
+                            <div class="skills-list">
+                                <div class="skill-row">
+                                    <span class="skill-label"
+                                        >Мови та core</span
+                                    >
+                                    <span class="skill-items"
+                                        >JavaScript, TypeScript, HTML, CSS,
+                                        React, Vue.js, Tailwind CSS, SCSS,
+                                        Next.js</span
+                                    >
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-label">Backend</span>
+                                    <span class="skill-items"
+                                        >Node.js, Express, Nest.js</span
+                                    >
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-label">Бази даних</span>
+                                    <span class="skill-items"
+                                        >PostgreSQL, MongoDB, SQLite,
+                                        Prisma</span
+                                    >
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-label">Інструменти</span>
+                                    <span class="skill-items"
+                                        >Git, GitHub Copilot, Claude Code,
+                                        Figma</span
+                                    >
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-label">Методології</span>
+                                    <span class="skill-items"
+                                        >Agile, Scrum</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="history-block">
+                            <h4 class="subheading">Досвід</h4>
+
+                            <div class="history-item">
+                                <span class="history-period"
+                                    >Січ. 2023 — тепер</span
+                                >
+                                <div class="history-detail">
+                                    <div>
+                                        <h5 class="history-role">
+                                            Web Developer, Team Lead
+                                        </h5>
+                                        <span class="history-company"
+                                            >Sombra</span
+                                        >
+                                    </div>
+                                    <ul class="history-points">
+                                        <li>
+                                            Керував командою з 4 розробників і 2
+                                            QA, координуючи роботу та
+                                            комунікацію з клієнтом
+                                        </li>
+                                        <li>
+                                            Розвивав платформу для вчителів на
+                                            React (20K+ користувачів) — скоротив
+                                            час на звітність на 50%
+                                        </li>
+                                        <li>
+                                            Створив 200+ освітніх ігор на
+                                            vanilla JS для 250K+
+                                            дітей-користувачів
+                                        </li>
+                                        <li>
+                                            Розробив 15 внутрішніх
+                                            NPM-бібліотек, що скоротили час
+                                            розробки фіч на 35%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="history-item">
+                                <span class="history-period"
+                                    >Лист. 2021 — Січ. 2023</span
+                                >
+                                <div class="history-detail">
+                                    <div>
+                                        <h5 class="history-role">
+                                            Front-End Developer
+                                        </h5>
+                                        <span class="history-company"
+                                            >SoftBlues</span
+                                        >
+                                    </div>
+                                    <ul class="history-points">
+                                        <li>
+                                            Розробляв Vue-компоненти на
+                                            TypeScript у продукті для 40K+
+                                            клієнтів
+                                        </li>
+                                        <li>
+                                            Впровадив візуалізацію даних на
+                                            Chart.js для 8 дашбордів
+                                        </li>
+                                        <li>
+                                            Створив 20+ кастомних хуків,
+                                            реалізував 20+ фіч та виправив 100+
+                                            багів
+                                        </li>
+                                        <li>
+                                            Задокументував 30+ компонентів у
+                                            Storybook, скоротивши онбординг на
+                                            20%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="history-item">
+                                <span class="history-period"
+                                    >Трав. 2021 — Жовт. 2021</span
+                                >
+                                <div class="history-detail">
+                                    <div>
+                                        <h5 class="history-role">UI Intern</h5>
+                                        <span class="history-company"
+                                            >Grid Dynamics</span
+                                        >
+                                    </div>
+                                    <ul class="history-points">
+                                        <li>
+                                            Втілював макети в інтерфейси на
+                                            JavaScript, HTML, CSS, React
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="history-item">
+                                <span class="history-period">2018 — 2021</span>
+                                <div class="history-detail">
+                                    <div>
+                                        <h5 class="history-role">Перекладач</h5>
+                                        <span class="history-company"
+                                            >Freelance</span
+                                        >
+                                    </div>
+                                    <ul class="history-points">
+                                        <li>
+                                            Переклад технічної документації з
+                                            польської та англійської мов на
+                                            українську
+                                        </li>
+                                        <li>
+                                            Переклад наукових статей та
+                                            матеріалів для українських видань:
+                                            Medialab, Спільне
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="contact" class="section contact-section">
+                        <h3 class="section-heading">Контакти</h3>
+                        <p class="contact-text">
+                            Відкритий до нових проєктів та можливостей — з
+                            радістю обговорю деталі.
+                        </p>
+                        <p class="contact-text">Телефон: 0961943933</p>
+                        <p class="contact-text">Email: ivanshpynda@gmail.com</p>
+                        <a href="mailto:ivanshpynda@gmail.com" class="cta"
+                            >Написати листа</a
+                        >
+                        <span class="copyright">© 2026 Іван Шпинда</span>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

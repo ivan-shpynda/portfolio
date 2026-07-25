@@ -1,0 +1,31 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--toggle-border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.themeToggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.iconMoon {
+  display: none;
+}
+
+:global(:root[data-theme="dark"]) .iconSun {
+  display: none;
+}
+
+:global(:root[data-theme="dark"]) .iconMoon {
+  display: block;
+}

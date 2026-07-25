@@ -1,0 +1,191 @@
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projectCard {
+  padding: 28px;
+  border-radius: 6px;
+  background: var(--card-bg);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.projectCard:hover {
+  background: var(--card-hover-bg);
+  transform: translateY(-2px);
+}
+
+.projectBody {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: start;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.projectKicker {
+  font: 500 12px/1 var(--font-ibm-plex-mono), monospace;
+  color: var(--accent);
+}
+
+.projectTitle {
+  margin: 0;
+  font: 600 20px/1.3 var(--font-inter), sans-serif;
+  color: var(--primary);
+}
+
+.projectDesc {
+  margin: 0;
+  font: 400 15px/1.65 var(--font-inter), sans-serif;
+  color: var(--muted);
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 4px;
+  font: 500 11.5px/1 var(--font-ibm-plex-mono), monospace;
+  color: var(--muted);
+}
+
+.projectLinks {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+  font: 600 12.5px/1 var(--font-ibm-plex-mono), monospace;
+}
+
+.linkAccent {
+  color: var(--accent);
+}
+
+.linkMuted {
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.linkMuted:hover {
+  color: var(--accent);
+}
+
+.noteBadge {
+  font: 500 11.5px/1 var(--font-ibm-plex-mono), monospace;
+  color: var(--note-color);
+  background: var(--note-bg);
+  padding: 6px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+.projectThumb {
+  display: block;
+  width: 220px;
+  height: 146.67px;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.browserWindow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #35363a;
+}
+
+.browserBar {
+  display: flex;
+  align-items: center;
+  height: 14px;
+  background: #202124;
+  padding: 0 6px;
+  flex-shrink: 0;
+}
+
+.browserDots {
+  display: flex;
+  gap: 3px;
+}
+
+.browserDots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.dotRed {
+  background: #ff5f57;
+}
+
+.dotYellow {
+  background: #febc2e;
+}
+
+.dotGreen {
+  background: #28c840;
+}
+
+.browserUrl {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 14px;
+  background: #35363a;
+  padding: 0 6px;
+  flex-shrink: 0;
+}
+
+.urlIcon {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #9aa0a6;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.urlText {
+  font: 400 7px/1 system-ui, sans-serif;
+  color: #e8eaed;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.browserContent {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--slot-bg);
+  overflow: hidden;
+  position: relative;
+}
+
+.browserContent img {
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width: 900px) {
+  .projectBody {
+    grid-template-columns: 1fr;
+  }
+
+  .projectThumb {
+    width: 100%;
+    height: 200px;
+  }
+}

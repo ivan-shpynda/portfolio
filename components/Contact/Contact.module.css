@@ -1,0 +1,31 @@
+.contactSection {
+  composes: section from "../Section.module.css";
+  padding-bottom: 80px;
+}
+
+.contactText {
+  max-width: 52ch;
+}
+
+.cta {
+  margin-top: 12px;
+  display: inline-flex;
+  width: fit-content;
+  padding: 16px 32px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  font: 600 13.5px/1 var(--font-ibm-plex-mono), monospace;
+  color: var(--accent);
+  transition: background 0.2s;
+}
+
+.cta:hover {
+  background: var(--cta-hover-bg);
+}
+
+.copyright {
+  display: block;
+  font: 400 12px/1 var(--font-ibm-plex-mono), monospace;
+  color: var(--faint);
+  margin-top: 48px;
+}

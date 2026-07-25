@@ -16,7 +16,7 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://ivan-shpynda.github.io";
+const siteUrl = "https://shpynda.dev";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),

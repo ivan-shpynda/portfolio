@@ -1,3 +1,3 @@
 # Portfolio website
 
-[DEMO LINK](https://ivan-shpynda.github.io/portfolio/)
+[DEMO LINK](https://shpynda.dev)

@@ -29,4 +29,4 @@ This is a single-page personal portfolio (one route: `app/page.js`) built with N
 
 **Path alias**: `@/*` maps to the repo root (`jsconfig.json`), e.g. `import Sidebar from "@/components/Sidebar/Sidebar"`.
 
-**Known placeholder**: `siteUrl`/`metadataBase` in `app/layout.js` still points at the old GitHub Pages URL (`https://ivan-shpynda.github.io`) from before this repo was rewritten from a static site to Next.js. Update it if/when the app is deployed elsewhere.
+**Deployment**: the app is deployed on Vercel under the custom domain `https://shpynda.dev`, which is also `siteUrl`/`metadataBase` in `app/layout.js`.

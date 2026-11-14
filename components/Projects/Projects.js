@@ -6,10 +6,9 @@ const PROJECTS = [
   {
     kicker: "Сайт",
     title: "Музей Митрополита Андрея",
-    description:
-      "Сайт для музею Митрополита Андрея Шептицького у Львові. Запуск у продакшн планується у серпні 2026 року.",
+    description: "Сайт для музею Митрополита Андрея Шептицького у Львові.",
     tech: ["Next.js", "Firebase", "CSS Modules"],
-    demoUrl: "https://museum-sandy-nine.vercel.app/",
+    demoUrl: "https://www.sheptytskymuseum.com/",
     demoLabel: "museum-sandy-nine.vercel.app",
     githubUrl: "https://github.com/ivan-shpynda/museum",
     image: "/imgs/museum.png",
